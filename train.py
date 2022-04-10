@@ -85,7 +85,8 @@ dataset = ChatDataset()
 train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)
 
 # use the gpu if it's available, otherwise use cpu
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu') GPU NOT WORKING WITH STREAMLIT
+device = torch.device('cpu')
 
 model = NeuralNet(input_size, hidden_size, output_size).to(device)
 
