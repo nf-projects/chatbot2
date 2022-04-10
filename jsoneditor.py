@@ -1,5 +1,8 @@
 import json
 
+# Json Editor to edit the intents
+# not working atm
+
 filename = "./intents.json"
 
 def choices():
