@@ -61,7 +61,9 @@
         "patterns": [
           "How long does delivery take?",
           "How long does shipping take?",
-          "When do I get my delivery?"
+          "When do I get my delivery?",
+          "What's the shipping time?",
+          "How long is the shipping wait time?"
         ],
         "responses": [
           "Delivery takes 2-4 days",
