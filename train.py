@@ -73,6 +73,8 @@ input_size = len(x_train[0])
 hidden_size = 8
 output_size = len(tags)
 learning_rate = 0.001
+num_epochs = 1000
+
 
 dataset = ChatDataset()
 # This is the magic that makes it work i think (PyTorch)
@@ -80,7 +82,7 @@ dataset = ChatDataset()
 # - batch_size is the number of samples per batch to load
 # - Shuffle=true makes it shuffle every epoch
 # - num-workers=2 makes it multi-threaded
-train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True, num_workers=2)
+train_loader = DataLoader(dataset=dataset, batch_size=batch_size, shuffle=True)
 
 # use the gpu if it's available, otherwise use cpu
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -91,3 +93,22 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 # one of the things i have no idea what it does
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
+for epoch in range(num_epochs):
+    for (words, labels) in train_loader:
+        words = words.to(device)
+        labels = labels.to(device, torch.int64)
+
+        # forward
+        outputs = model(words)
+        loss = criterion(outputs, labels)
+
+        # backward and optimize
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+    if (epoch+1) % 100 == 0:
+        print(f'epoch {epoch+1}/{num_epochs}, loss={loss.item():.4f}')
+
+print(f'final loss, loss=loss.item():.4f')
