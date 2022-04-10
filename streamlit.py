@@ -4,7 +4,7 @@ import streamlit as st
 from streamlit_chat import message
 from returnreply import returnreply
 
-input = st.text_input('Your Message') #awdad
+input = st.text_input('Your Message')
 
 if input:
     message("You: " + input, is_user=True)
