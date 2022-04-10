@@ -6,20 +6,26 @@ import pandas as pd
 import numpy as np
 from returnreply import returnreply
 
-st.set_page_config(
-    page_title="Epic Amazing Chatbot" 
-)
+#st.write("Welcome to the Chatbot. I am still learning, please be patient")
+#input = st.text_input('User:')
 
-st.header("Streamlit Chat - Demo")
+# TEXT INPUT BOX
+# - when enter press: clear, do do function onInput()
+# onInput() FUNCTION
+# - write the input as a user message
+# - write the bot reply
 
-def on_change():
-    message(returnreply(user_input), is_user=False)
 
-def get_text():
-    input_text = st.text_input("You: ","Hello, how are you?", key="input", on_change=on_change)
-    return input_text 
 
-user_input = get_text()
+#message("Hi Bot", is_user=True, key="message1")
+#message("I am a chatbot", key="message2")
+#message("Do you take paypal?", is_user=True, key="message3")
+#message("Yes we do lol", key="message4")
 
-message("My message") 
-message("Hello bot!", is_user=True)  # align's the message to the right
+input = st.text_input('Your Message')
+
+#st.write('You: ', input)
+if input:
+    message("You: " + input, is_user=True)
+    message("Jonathan (Bot): " + returnreply(input), is_user=False)
+#st.write('Jonathan (Bot): ', returnreply(input))
