@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from model import NeuralNet
 
 #open the json file 'intents.json' in read mode
-with open('intents.json') as f:
+with open('intents_alt.json') as f:
     # Each intent is one "category" - with tags, patterns (input), and responses
     intents = json.load(f)
 
@@ -73,7 +73,7 @@ input_size = len(x_train[0])
 hidden_size = 8
 output_size = len(tags)
 learning_rate = 0.001
-num_epochs = 10000
+num_epochs = 1000
 
 
 dataset = ChatDataset()
