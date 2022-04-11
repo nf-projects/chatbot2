@@ -25,10 +25,7 @@
         "patterns": [
           "Bye", 
           "See you later", 
-          "Goodbye",
-          "cya",
-          "see you tomorrow",
-          "adios"
+          "Goodbye"
         ],
         "responses": [
           "See you later, thanks for visiting",
@@ -42,9 +39,7 @@
           "Thanks", 
           "Thank you", 
           "That's helpful", 
-          "Thank's a lot!",
-          "Very cool!",
-          "nice"
+          "Thank's a lot!"
         ],
         "responses": ["Happy to help!", "Any time!", "My pleasure :)"]
       },
@@ -52,10 +47,7 @@
         "tag": "depression",
         "patterns": [
           "I'm feeling sad",
-          "I am sad",
-          "I'm not feeling well right now",
-          "I'm feeling depressed",
-          "I have depression"
+          "I am sad"
         ],
         "responses": [
           "Sorry to hear that! Diagnosis: Depression"
@@ -80,12 +72,7 @@
         "patterns": [
           "Tell me a joke!",
           "Tell me something funny!",
-          "Do you know a joke?",
-          "I like humor",
-          "Can you do comedy?",
-          "Can you be funny?",
-          "Say something funny!",
-          "Do you konw any jokes?"
+          "Do you know a joke?"
         ],
         "responses": [
           "Why do Java programmers have to wear glasses? Because they dont C#",
