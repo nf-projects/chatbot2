@@ -8,4 +8,4 @@ input = st.text_input('Your Message') #awdad
 
 if input:
     message("You: " + input, is_user=True)
-    message("Jonathan (Bot): " + returnreply(input), is_user=False)
+    message(returnreply(input), is_user=False)
