@@ -1,96 +1,94 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "howdy",
-          "Hello",
-          "Good day",
-          "Good morning",
-          "Good evening",
-          "Whats up",
-          "Nice to meet you"
-        ],
-        "responses": [
-          "Hello! I am Jonathan, a conversational A.I. chatbot.",
-          "Hi! What can I do for you?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": [
-          "Bye", 
-          "See you later", 
-          "Goodbye",
-          "cya",
-          "see you tomorrow",
-          "adios"
-        ],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": [
-          "Thanks", 
-          "Thank you", 
-          "That's helpful", 
-          "Thank's a lot!",
-          "Very cool!",
-          "nice"
-        ],
-        "responses": ["Happy to help!", "Any time!", "My pleasure :)"]
-      },
-      {
-        "tag": "depression",
-        "patterns": [
-          "I'm feeling sad",
-          "I am sad",
-          "I'm not feeling well right now",
-          "I'm feeling depressed",
-          "I have depression"
-        ],
-        "responses": [
-          "Sorry to hear that! Diagnosis: Depression"
-        ]
-      },
-      {
-        "tag": "session",
-        "patterns": [
-          "Can you book another session?",
-          "When is our next session?",
-          "Will we meet again next week?",
-          "Are you free tomorrow?",
-          "Do you have time to meet next week?"
-        ],
-        "responses": [
-          "I already scheduled the next session for you!",
-          "We can talk again in a week."
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?",
-          "I like humor",
-          "Can you do comedy?",
-          "Can you be funny?",
-          "Say something funny!",
-          "Do you konw any jokes?"
-        ],
-        "responses": [
-          "Why do Java programmers have to wear glasses? Because they dont C#",
-          "What did the router say to the doctor? It hurts when IP"
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "howdy",
+        "Hello",
+        "Good day",
+        "Good morning",
+        "Good evening",
+        "Whats up",
+        "Nice to meet you"
+      ],
+      "responses": [
+        "Hello! Welcome to Cognity, I am your virtual assistant. How can I help you today?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", 
+        "See you later", 
+        "Goodbye",
+        "cya",
+        "see you tomorrow",
+        "adios"
+      ],
+      "responses": [
+        "See you later, thanks for contactig me!",
+        "Have a nice day! :-)"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", 
+        "Thank you", 
+        "That's helpful", 
+        "Thank's a lot!",
+        "Very cool!",
+        "nice"
+      ],
+      "responses": ["Happy to help!", "Any time!", "My pleasure :)"]
+    },
+    {
+      "tag": "depression",
+      "patterns": [
+        "I'm feeling sad",
+        "I am sad",
+        "I'm not feeling well right now",
+        "I'm feeling depressed",
+        "I have depression"
+      ],
+      "responses": [
+        "Sorry to hear that! You may be experiencing depression."
+      ]
+    },
+    {
+      "tag": "session",
+      "patterns": [
+        "Can you book another session?",
+        "When is our next session?",
+        "Will we meet again next week?",
+        "Are you free tomorrow?",
+        "Do you have time to meet next week?"
+      ],
+      "responses": [
+        "I already scheduled the next session for you!",
+        "We can talk again in a week."
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?",
+        "I like humor",
+        "Can you do comedy?",
+        "Can you be funny?",
+        "Say something funny!",
+        "Do you konw any jokes?"
+      ],
+      "responses": [
+        "Why do Java programmers have to wear glasses? Because they dont C#",
+        "What did the router say to the doctor? It hurts when IP"
+      ]
+    }
+  ]
+}
