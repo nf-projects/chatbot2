@@ -8,8 +8,8 @@ from torch.utils.data import Dataset, DataLoader
 
 from model import NeuralNet
 
-#open the json file 'intents.json' in read mode
-with open('intents.json') as f:
+#open the json file 'intents_alt.json' in read mode
+with open('intents_alt.json') as f:
     # Each intent is one "category" - with tags, patterns (input), and responses
     intents = json.load(f)
 
